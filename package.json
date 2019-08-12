@@ -1,6 +1,6 @@
 {
   "name": "@snowdreamtech/jweixin-signature",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "微信wechat-js-sdk官方包",
   "main": "index.js",
   "scripts": {

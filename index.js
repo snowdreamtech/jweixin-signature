@@ -81,7 +81,7 @@ exports.getAccessTokenAsync = function (params) {
         }
 
         fetch('https://api.weixin.qq.com/cgi-bin/token?grant_type=' + params.grant_type +
-                '&appid =' + params.appid + '& secret =' + params.secret)
+                '&appid=' + params.appid + '&secret=' + params.secret)
             .then(res => res.json())
             .then(json => resolve(json))
             .catch(err => reject(err));
@@ -114,7 +114,7 @@ exports.getJsapiTicketAsync = function (params) {
         }
 
         fetch('https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=' + params.access_token +
-                '&type =' + params.type)
+                '&type=' + params.type)
             .then(res => res.json())
             .then(json => resolve(json))
             .catch(err => reject(err));
